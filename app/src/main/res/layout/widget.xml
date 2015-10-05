@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+    <FrameLayout
+        android:id="@+id/widget"
+        android:layout_width="match_parent"
+        android:background="@color/primary_dark_material_dark"
+        android:layout_height="@dimen/abc_action_bar_default_height_material">
+        <!-- -
+        android:background="@color/primary">
+        <!- -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_margin"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_launcher"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_headline_material"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="@color/primary_text_default_material_dark"
+            android:text="@string/title_widget"/>
+</FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/primary_material_light">
+    <!-- -
+    android:background="@color/primary_light">
+    <!- -->
+
+    <ListView
+        android:id="@+id/widget_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/accent_material_light"
+        android:dividerHeight="0.1dp"
+        tools:listitem="@layout/widget_list_item"/>
+    <TextView
+        android:id="@+id/widget_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/primary_dark_material_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/empty_match_list"/>
+</FrameLayout>
+
+</LinearLayout>

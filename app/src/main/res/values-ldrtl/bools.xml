@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="widget_enabled">true</bool>
+    <bool name="use_alt_activity">true</bool>
+    <bool name="is_rtl_layout">true</bool>
+</resources>

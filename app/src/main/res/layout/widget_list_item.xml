@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- -
+    android:background="@drawable/touch_selector_white"
+    <!- -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:targetApi="14">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/widget_list_item_top_line"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_crest"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:contentDescription="@id/home_name"
+            tools:src="@drawable/no_icon"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/home_score"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/next_or_time_remaining_title"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/material_deep_teal_200"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Match time:"/>
+
+        <TextView
+            android:id="@+id/away_score"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="10"/>
+
+        <ImageView
+            android:id="@+id/away_crest"
+            android:layout_gravity="end"
+            android:contentDescription="@id/away_name"
+            tools:src="@drawable/no_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!--android:layout_width="@dimen/list_icon"-->
+    <!--android:layout_height="@dimen/list_icon"-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/widget_list_item_top_line"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:text="Home Name"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/next_or_time_remaining"
+            android:textColor="@color/material_deep_teal_500"
+            android:gravity="center"
+            android:text="12:00 PM EST"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/away_name"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Away Name"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="@color/primary_dark_material_dark"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
